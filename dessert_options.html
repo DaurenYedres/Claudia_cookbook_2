@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dessert Options</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="lunch_options.html">Lunch</a></li>
+            <li><a href="dinner_options.html">Dinner</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
+    </div>
+
+    <!-- Dessert Recipes -->
+    <div class="container">
+        <!-- Chocolate Avocado Mousse -->
+        <div class="recipe">
+            <h1>Chocolate Avocado Mousse</h1>
+            <div class="recipe-content">
+                <img src="images/0006.jpg" alt="Chocolate Avocado Mousse">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 ripe avocados</li>
+                        <li>¼ cup cocoa powder</li>
+                        <li>¼ cup honey or maple syrup</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Pinch of salt</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Blend all ingredients until smooth. Chill for 30 minutes before serving.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 4g, Carbs: 15g, Fat: 20g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Dairy-Free Banana Ice Cream -->
+        <div class="recipe">
+            <h1>Dairy-Free Banana Ice Cream</h1>
+            <div class="recipe-content">
+                <img src="images/0007.jpg" alt="Banana Ice Cream">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>2 frozen bananas</li>
+                        <li>1 tablespoon almond butter</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Optional: dark chocolate chips</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Blend bananas, almond butter, and vanilla until creamy. Serve immediately or freeze for a firmer texture. Add chocolate chips if desired.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 3g, Carbs: 22g, Fat: 6g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- No-Bake Energy Bites -->
+        <div class="recipe">
+            <h1>No-Bake Energy Bites</h1>
+            <div class="recipe-content">
+                <img src="images/0008.jpg" alt="No-Bake Energy Bites">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>1 cup rolled oats</li>
+                        <li>½ cup peanut butter</li>
+                        <li>¼ cup honey</li>
+                        <li>1 teaspoon vanilla extract</li>
+                        <li>Optional: dark chocolate chips</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Mix all ingredients in a bowl. Form into small balls and refrigerate for at least 30 minutes before serving.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 6g, Carbs: 20g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Chia Seed Pudding -->
+        <div class="recipe">
+            <h1>Chia Seed Pudding</h1>
+            <div class="recipe-content">
+                <img src="images/0009.jpg" alt="Chia Seed Pudding">
+                <div class="recipe-text">
+                    <h2>Ingredients</h2>
+                    <ul>
+                        <li>¼ cup chia seeds</li>
+                        <li>1 cup almond milk</li>
+                        <li>1 tablespoon honey or maple syrup</li>
+                        <li>½ teaspoon vanilla extract</li>
+                        <li>Optional: fresh fruit for topping</li>
+                    </ul>
+                    <h2>Procedure</h2>
+                    <p>Mix all ingredients in a bowl. Refrigerate for at least 2 hours or overnight until thickened. Serve with fresh fruit if desired.</p>
+                    <h2>Macros</h2>
+                    <p>Protein: 5g, Carbs: 15g, Fat: 8g</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>

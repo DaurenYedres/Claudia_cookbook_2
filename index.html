@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claudia's Cookbook</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <div class="navbar">
+        <button class="menu-button">☰ Menu</button>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="breakfast_options.html">Breakfast</a></li>
+            <li><a href="lunch_options.html">Lunch</a></li>
+            <li><a href="dinner_options.html">Dinner</a></li>
+            <li><a href="dessert_options.html">Dessert</a></li>
+            <li><a href="food_list.html">Macros</a></li>
+            <li><a href="weekly_grocery.html">Grocery List</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <img src="images/main_page.jpg" alt="Main Page Image">
+        <div class="hero-text">
+            <h1>Welcome to Claudia's Cookbook</h1>
+            <h2 href="https://github.com/DaurenYedres">Made by Dauren</h2>
+            <p>Your one-stop source for delicious recipes, nutritional guides, and meal ideas.</p>
+        </div>
+    </div>
+    
+
+    <!-- Main Section with Links -->
+    <div class="section-links">
+        <h2>Explore Our Sections</h2>
+        <div class="card-container">
+            <div class="card">
+                <a href="breakfast_options.html">Breakfast Options</a>
+            </div>
+            <div class="card">
+                <a href="lunch_options.html">Lunch Options</a>
+            </div>
+            <div class="card">
+                <a href="dinner_options.html">Dinner Options</a>
+            </div>
+            <div class="card">
+                <a href="dessert_options.html">Dessert Options</a>
+            </div>
+            <div class="card">
+                <a href="food_list.html">Macros & Nutrition</a>
+            </div>
+            <div class="card">
+                <a href="weekly_grocery.html">Weekly Grocery Suggestions</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 Claudia's Cookbook. All rights reserved.</p>
+    </div>
+
+    <!-- JavaScript for Navbar -->
+    <script>
+        const menuButton = document.querySelector('.menu-button');
+        const navLinks = document.querySelector('.navbar ul');
+
+        menuButton.addEventListener('click', () => {
+            navLinks.classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
